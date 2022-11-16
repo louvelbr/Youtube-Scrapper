@@ -1,0 +1,157 @@
+"description": {
+    "runs": [
+        {
+            "text": "Dans cette vid\u00e9o on va apprendre \u00e0 faire du web scrapping d'un site web.\n\nLien du site: "
+        },
+        {
+            "text": "http://feeds.bbci.co.uk/news/rss.xml",
+            "navigationEndpoint": {
+                "clickTrackingParams": "CJsBEM2rARgBIhMI8OTQrbOy-wIVhMq0Ch20-wmKSIihwvDtw7bYXQ==",
+                "commandMetadata": {
+                    "webCommandMetadata": {
+                        "url": "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazBOUWQ5NVZ1Z1BKaXV1MXNyc1Z1YXE0NVJBQXxBQ3Jtc0tuMUZBVHpwMHBHSDNJUDVuamNmQ2lERy01V05XZkJuZ0VQbFJtWUJRNWgxekNleUlOVk1tNWlGcDBwSVVGWmtYenktOWIteDNnSU51SlBhZGF4bndnVklKUDVUTDJtY3l4T1FLLVV6SkRodVpvak84aw&q=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Frss.xml&v=XbDaHt4QkIg",
+                        "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                        "rootVe": 83769
+                    }
+                },
+                "urlEndpoint": {
+                    "url": "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazBOUWQ5NVZ1Z1BKaXV1MXNyc1Z1YXE0NVJBQXxBQ3Jtc0tuMUZBVHpwMHBHSDNJUDVuamNmQ2lERy01V05XZkJuZ0VQbFJtWUJRNWgxekNleUlOVk1tNWlGcDBwSVVGWmtYenktOWIteDNnSU51SlBhZGF4bndnVklKUDVUTDJtY3l4T1FLLVV6SkRodVpvak84aw&q=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Frss.xml&v=XbDaHt4QkIg",
+                    "target": "TARGET_NEW_WINDOW",
+                    "nofollow": true
+                }
+            }
+        },
+        {
+            "text": "\n\nPremiere video sur le web scrapping: "
+        },
+        {
+            "text": "https://www.youtube.com/watch?v=7QueV...",
+            "navigationEndpoint": {
+                "clickTrackingParams": "CJsBEM2rARgBIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "commandMetadata": {
+                    "webCommandMetadata": {
+                        "url": "/watch?v=7QueVLYfdnc&t=427s",
+                        "webPageType": "WEB_PAGE_TYPE_WATCH",
+                        "rootVe": 3832
+                    }
+                },
+                "watchEndpoint": {
+                    "videoId": "7QueVLYfdnc",
+                    "startTimeSeconds": 427,
+                    "watchEndpointSupportedOnesieConfig": {
+                        "html5PlaybackOnesieConfig": {
+                            "commonConfig": {
+                                "url": "https://rr3---sn-25ge7nzk.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odeak=1&odepv=1&osfc=1&id=ed0b9e54b61f7677&ip=217.119.181.222&osts=427&initcwndbps=2547500&mt=1668591219&oweuc=&pxtags=Cg4KAnR4EggyNDQxMjA4Ng&rxtags=Cg4KAnR4EggyNDQxMjA4Mw%2CCg4KAnR4EggyNDQxMjA4NA%2CCg4KAnR4EggyNDQxMjA4NQ%2CCg4KAnR4EggyNDQxMjA4Ng%2CCg4KAnR4EggyNDQxMjA4Nw%2CCg4KAnR4EggyNDQxMjA4OA%2CCg4KAnR4EggyNDQxMjA4OQ%2CCg4KAnR4EggyNDQxMjA5MA%2CCg4KAnR4EggyNDQxMjA5MQ"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "text": "\n\nformation python de A \u00e0 Z sur Udemy: "
+        },
+        {
+            "text": "https://www.udemy.com/course/apprendr...",
+            "navigationEndpoint": {
+                "clickTrackingParams": "CJsBEM2rARgBIhMI8OTQrbOy-wIVhMq0Ch20-wmKSIihwvDtw7bYXQ==",
+                "commandMetadata": {
+                    "webCommandMetadata": {
+                        "url": "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmo2YkpXS0gySWhRZGl4RjVzNEJjeHBxU3ZKQXxBQ3Jtc0trS1VNX0sxMDNwYm0wZXR5OFpicVpRb1R5Q0dqMV90bi1rX1RtTjhmOGJ3VGhENnFSandPUXpMRGVuS0JCQ1BwZncxU21oMjZrUTUtekJqUnRQeVE5VWFseDFFWXpSUjFxRURGSGp6Sk5RZ2E4bWFFNA&q=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fapprendre-python-a-z%2Flearn%2Flecture%2F18106185%3FreferralCode%3D4821EE0AAC644080AB51%23overview&v=XbDaHt4QkIg",
+                        "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                        "rootVe": 83769
+                    }
+                },
+                "urlEndpoint": {
+                    "url": "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmo2YkpXS0gySWhRZGl4RjVzNEJjeHBxU3ZKQXxBQ3Jtc0trS1VNX0sxMDNwYm0wZXR5OFpicVpRb1R5Q0dqMV90bi1rX1RtTjhmOGJ3VGhENnFSandPUXpMRGVuS0JCQ1BwZncxU21oMjZrUTUtekJqUnRQeVE5VWFseDFFWXpSUjFxRURGSGp6Sk5RZ2E4bWFFNA&q=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fapprendre-python-a-z%2Flearn%2Flecture%2F18106185%3FreferralCode%3D4821EE0AAC644080AB51%23overview&v=XbDaHt4QkIg",
+                    "target": "TARGET_NEW_WINDOW",
+                    "nofollow": true
+                }
+            }
+        },
+        {
+            "text": "\n\n"
+        },
+        {
+            "text": "#beautifulsoup",
+            "navigationEndpoint": {
+                "clickTrackingParams": "CKABENzXBBgJIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "commandMetadata": {
+                    "webCommandMetadata": {
+                        "url": "/hashtag/beautifulsoup",
+                        "webPageType": "WEB_PAGE_TYPE_BROWSE",
+                        "rootVe": 6827,
+                        "apiUrl": "/youtubei/v1/browse"
+                    }
+                },
+                "browseEndpoint": {
+                    "browseId": "FEhashtag",
+                    "params": "6gUPCg1iZWF1dGlmdWxzb3Vw"
+                }
+            },
+            "loggingDirectives": {
+                "trackingParams": "CKABENzXBBgJIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "visibility": {
+                    "types": "12"
+                },
+                "enableDisplayloggerExperiment": true
+            }
+        },
+        {
+            "text": " "
+        },
+        {
+            "text": "#selenium",
+            "navigationEndpoint": {
+                "clickTrackingParams": "CJ8BENzXBBgLIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "commandMetadata": {
+                    "webCommandMetadata": {
+                        "url": "/hashtag/selenium",
+                        "webPageType": "WEB_PAGE_TYPE_BROWSE",
+                        "rootVe": 6827,
+                        "apiUrl": "/youtubei/v1/browse"
+                    }
+                },
+                "browseEndpoint": {
+                    "browseId": "FEhashtag",
+                    "params": "6gUKCghzZWxlbml1bQ%3D%3D"
+                }
+            },
+            "loggingDirectives": {
+                "trackingParams": "CJ8BENzXBBgLIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "visibility": {
+                    "types": "12"
+                },
+                "enableDisplayloggerExperiment": true
+            }
+        },
+        {
+            "text": " "
+        },
+        {
+            "text": "#python",
+            "navigationEndpoint": {
+                "clickTrackingParams": "CJ4BENzXBBgNIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "commandMetadata": {
+                    "webCommandMetadata": {
+                        "url": "/hashtag/python",
+                        "webPageType": "WEB_PAGE_TYPE_BROWSE",
+                        "rootVe": 6827,
+                        "apiUrl": "/youtubei/v1/browse"
+                    }
+                },
+                "browseEndpoint": {
+                    "browseId": "FEhashtag",
+                    "params": "6gUICgZweXRob24%3D"
+                }
+            },
+            "loggingDirectives": {
+                "trackingParams": "CJ4BENzXBBgNIhMI8OTQrbOy-wIVhMq0Ch20-wmK",
+                "visibility": {
+                    "types": "12"
+                },
+                "enableDisplayloggerExperiment": true
+            }
+        }
+    ]
+},
