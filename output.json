@@ -1,1 +1,51 @@
-{"XbDaHt4QkIg": {"title": "Apprendre le Web Scrapping avec Python et BeautifulSoup", "VideoMaker": "FORMASYS", "likes": "355 clics", "description": "Dans cette vidéo on va apprendre à faire du web scrapping d'un site web.\n\nLien du site: http://feeds.bbci.co.uk/news/rss.xml\n\nPremiere video sur le web scrapping: https://www.youtube.com/watch?v=7QueV...\n\nformation python de A à Z sur Udemy: https://www.udemy.com/course/apprendr...\n\n#beautifulsoup #selenium #python", "links": ["http://feeds.bbci.co.uk/news/rss.xml", "https://www.youtube.com/watch?v=7QueV...", "https://www.udemy.com/course/apprendr..."], "id": "XbDaHt4QkIg"}, "XVv6mJpFOb0": {"title": "Web Scraping with Python - Beautiful Soup Crash Course", "VideoMaker": "freeCodeCamp.org", "likes": "22 660 clics", "description": "Learn how to perform web scraping with Python using the Beautiful Soup library.\n\n✏️ Tutorial by JimShapedCoding. Check out his YouTube Channel:\nhttps://www.youtube.com/channel/UCU8d...\n\n🔗 You can get code snippets here: http://www.jimshapedcoding.com/course...\n\n⭐️ Course Contents ⭐️\nLocal HTML Scraping:\n⌨️ (00:00) Basic HTML Structure, HTML Tags Explanation\n⌨️ (05:35) Packages Installation\n⌨️ (07:23) Scraping Usage, Local files\n⌨️ (12:41) Beautiful Soup find & find_all() methods\n⌨️ (16:22) Web Browser Inspect tool\n⌨️ (18:30) Grab all Prices, Basic Scraping Project\n\nWebsite Scraping:\n⌨️ (24:48) Using the Requests Library to see a Website's HTML  \n⌨️ (30:10) Scraping a Production Website, Best practices for pulling info\n⌨️ (44:05) Looping through similar soup.find_all() objects\n\nFeatures addition:\n⌨️ (48:26) Prettifying the Jobs paragraph\n⌨️ (54:05) Jobs Filtration by owned skills\n⌨️ (57:45) Setting up the Project to scrape every 10 minutes\n⌨️ (1:01:53) Storing the jobs paragraph in text files\n\n⭐️ Special thanks to our Champion supporters! ⭐️ \n🏆 Loc Do\n🏆 Joseph C\n🏆 DeezMaster\n\n--\n\nLearn to code for free and get a developer job: https://www.freecodecamp.org\n\nRead hundreds of articles on programming: https://freecodecamp.org/news", "links": ["https://www.youtube.com/channel/UCU8d...", "http://www.jimshapedcoding.com/course...", "https://www.freecodecamp.org", "https://freecodecamp.org/news"], "id": "XVv6mJpFOb0"}}
+{
+    "XbDaHt4QkIg": {
+        "title": "Apprendre le Web Scrapping avec Python et BeautifulSoup",
+        "videoMaker": "FORMASYS",
+        "likes": "355 clics",
+        "description": "Dans cette vidéo on va apprendre à faire du web scrapping d'un site web.\n\nLien du site: http://feeds.bbci.co.uk/news/rss.xml\n\nPremiere video sur le web scrapping: https://www.youtube.com/watch?v=7QueV...\n\nformation python de A à Z sur Udemy: https://www.udemy.com/course/apprendr...\n\n#beautifulsoup #selenium #python",
+        "links": [
+            "http://feeds.bbci.co.uk/news/rss.xml",
+            "https://www.youtube.com/watch?v=7QueV...",
+            "https://www.udemy.com/course/apprendr..."
+        ],
+        "id": "XbDaHt4QkIg",
+        "comments": [
+            "Je vous remercie pour vos tutoriels de grande qualité pédagogique. Continuez car ce que vous faites est de qualité et fort utile",
+            "Excellente présentation, claire et compréhensible.",
+            "Trés bon tutoriel, simple, bien expliqué et avec un exemple pertinent. Merci monsieur. Je mets un pouce bleu et un abonnement (et c'est bien la moindre des choses).",
+            "Ce tutoriel est court et clair. Merci.",
+            "Merci. Très clair et bien expliqué.",
+            "Merci beaucoup pour ce tutoriel \nJ aimerai bien pour un exemples sur silinium avec une boucle de variable",
+            "Serait-il possible d'expliquer comment créer une boucle pour récupérer les infos sur toutes les pages du blog ?",
+            "Un grand merci pour vos tutos ça m'aide bcp dans mes etudes",
+            "Rare que je commente des vidéos YouTube mais là il le fallait. Merci mec super vidéo.",
+            "Salut prof, est ce que on aura droit à des videos sur le NLP spacy? portez vous bien"
+        ]
+    },
+    "XVv6mJpFOb0": {
+        "title": "Web Scraping with Python - Beautiful Soup Crash Course",
+        "videoMaker": "freeCodeCamp.org",
+        "likes": "22 663 clics",
+        "description": "Learn how to perform web scraping with Python using the Beautiful Soup library.\n\n✏️ Tutorial by JimShapedCoding. Check out his YouTube Channel:\nhttps://www.youtube.com/channel/UCU8d...\n\n🔗 You can get code snippets here: http://www.jimshapedcoding.com/course...\n\n⭐️ Course Contents ⭐️\nLocal HTML Scraping:\n⌨️ (00:00) Basic HTML Structure, HTML Tags Explanation\n⌨️ (05:35) Packages Installation\n⌨️ (07:23) Scraping Usage, Local files\n⌨️ (12:41) Beautiful Soup find & find_all() methods\n⌨️ (16:22) Web Browser Inspect tool\n⌨️ (18:30) Grab all Prices, Basic Scraping Project\n\nWebsite Scraping:\n⌨️ (24:48) Using the Requests Library to see a Website's HTML  \n⌨️ (30:10) Scraping a Production Website, Best practices for pulling info\n⌨️ (44:05) Looping through similar soup.find_all() objects\n\nFeatures addition:\n⌨️ (48:26) Prettifying the Jobs paragraph\n⌨️ (54:05) Jobs Filtration by owned skills\n⌨️ (57:45) Setting up the Project to scrape every 10 minutes\n⌨️ (1:01:53) Storing the jobs paragraph in text files\n\n⭐️ Special thanks to our Champion supporters! ⭐️ \n🏆 Loc Do\n🏆 Joseph C\n🏆 DeezMaster\n\n--\n\nLearn to code for free and get a developer job: https://www.freecodecamp.org\n\nRead hundreds of articles on programming: https://freecodecamp.org/news",
+        "links": [
+            "https://www.youtube.com/channel/UCU8d...",
+            "http://www.jimshapedcoding.com/course...",
+            "https://www.freecodecamp.org",
+            "https://freecodecamp.org/news"
+        ],
+        "id": "XVv6mJpFOb0",
+        "comments": [
+            "Thanks to FCC for posting my Web Scraping course. \nThis is a huge achievement for me as a consistent learner from this channel :)\nI hope to see you all around in my future uploads!",
+            "I thought this skill would be way above my level as i'm still a student mid way through my under-graduate , but you guys made it look like a child's play. I’m actually able to do web scraping after watching your video. Well done FCC team , good job boys.",
+            "This is definitely one of the best hours I spent on YouTube. Quality content for free. We don't deserve this...",
+            "I just have to say, this is the best webscraping course I have seen so far. Very well done !",
+            "this is what I call quality content. Very logically presented and instructed. Thank you very much for contributing to my future's success in Python.",
+            "This course is mindblowing...\nfirst, the pace is excellent...no bullshiting, straight to the point, clear and concise,\nsecondly, very detailed... I was able to scrap a real estate website for an analysis i wanted to do",
+            "The amount of hard work and dedication you guys put to create such free content is just Amazing!!!",
+            "This was amazing, I didn't know web scraping could be so easy",
+            "This is the best Python educational video I've watched. The difficulty progression and pacing were perfect.",
+            "Thank you! This was a great introduction for a total beginner to scraping. By the end of it, I was able to use what you taught me on a different website, and I'm starting a scraping project now with what I just learned."
+        ]
+    }
+}

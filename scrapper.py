@@ -7,6 +7,35 @@ from unidecode import unidecode
 import sys, getopt
 
 
+import time
+from selenium.webdriver import Chrome
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+nbComments = 10
+
+def getComments(url):
+    acc = 0
+    comments = []
+    with Chrome() as driver:
+        wait = WebDriverWait(driver,10)
+        driver.get(url)
+
+        for item in range(3): #by increasing the highest range you can get more content
+            wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body"))).send_keys(Keys.END)
+            time.sleep(3)
+
+        for comment in wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#comment #content-text"))):
+            if acc < nbComments:
+                comments.append(comment.text)
+                acc += 1
+            else:
+                break
+    return comments
+
+
 dict = {}
 
 def readFile(inputFile):
@@ -48,28 +77,30 @@ def getDescriptionAndLinks(data_json):
                 list_link.append(dict_tmp[i]['text'])
     return res, list_link
     
+def getDataFromVideo(url):
+    # import code from page
+    response=requests.get(url)
+    return BeautifulSoup(response.text,"html.parser")
 
 def extract_video_informations(url):  
     
-    # importer le code de la page
-    response=requests.get(url)
-    soup=BeautifulSoup(response.text,"html.parser")
+    soup = getDataFromVideo(url)
 
     result = {}  
 
     result["title"] = soup.find("meta", itemprop="name")['content']  
-    result["VideoMaker"] = soup.find("span", itemprop="author").next.next['content'] 
+    result["videoMaker"] = soup.find("span", itemprop="author").next.next['content'] 
 
     data = re.search(r"var ytInitialData = ({.*?});", soup.prettify()).group(1)  
     data_json = json.loads(data) 
-
-    writeFile("tmp.json", data_json)
 
     result["likes"] = getNbLikes(data_json)
 
     result["description"], result["links"] = getDescriptionAndLinks(data_json)
 
     result["id"] = soup.find("meta", itemprop="videoId")['content'] 
+
+    result["comments"] = getComments(url)
 
     return(result)
 
@@ -92,8 +123,6 @@ def readArguments(argv):
             inputFile = arg
         elif opt in ("-o", "--output"):
             outputFile = arg
-    print ('Input file is :', inputFile)
-    print ('Output file is :', outputFile)
     return inputFile, outputFile
 
 if __name__ == "__main__":
