@@ -23,6 +23,32 @@ def writeFile(outputFile, dict):
     with open(outputFile, mode='w',encoding='utf8') as f:
         json.dump(dict, f, ensure_ascii=False)
 
+def getNbLikes(data_json):
+    videoPrimaryInfoRenderer = data_json['contents']['twoColumnWatchNextResults']['results']['results']['contents'][0]['videoPrimaryInfoRenderer']  
+
+     # number of likes  
+    likes_label = videoPrimaryInfoRenderer['videoActions']['menuRenderer']['topLevelButtons'][0]['segmentedLikeDislikeButtonRenderer']['likeButton']['toggleButtonRenderer']['defaultText']['accessibility']['accessibilityData']['label']# "No likes" or "###,### likes"  
+
+    likes_str = likes_label.split(' ')[0].replace(',','')  
+
+    return '0' if likes_str == 'No' else unidecode(likes_str)
+
+def getDescriptionAndLinks(data_json):
+    dict_tmp = data_json['contents']["twoColumnWatchNextResults"]["results"]["results"]["contents"][1]["videoSecondaryInfoRenderer"]["description"]["runs"]
+
+    res = ''
+    list_link = []
+    for i in range(len(dict_tmp)):
+
+        if 'text' in dict_tmp[i].keys():
+
+            res += dict_tmp[i]['text']
+            
+            if "http" in dict_tmp[i]['text']:
+                list_link.append(dict_tmp[i]['text'])
+    return res, list_link
+    
+
 def extract_video_informations(url):  
     
     # importer le code de la page
@@ -39,28 +65,10 @@ def extract_video_informations(url):
 
     writeFile("tmp.json", data_json)
 
-    videoPrimaryInfoRenderer = data_json['contents']['twoColumnWatchNextResults']['results']['results']['contents'][0]['videoPrimaryInfoRenderer']  
+    result["likes"] = getNbLikes(data_json)
 
-     # number of likes  
-    likes_label = videoPrimaryInfoRenderer['videoActions']['menuRenderer']['topLevelButtons'][0]['segmentedLikeDislikeButtonRenderer']['likeButton']['toggleButtonRenderer']['defaultText']['accessibility']['accessibilityData']['label']# "No likes" or "###,### likes"  
+    result["description"], result["links"] = getDescriptionAndLinks(data_json)
 
-    likes_str = likes_label.split(' ')[0].replace(',','')  
-    result["likes"] = '0' if likes_str == 'No' else unidecode(likes_str)  
-
-    dict_tmp = data_json['contents']["twoColumnWatchNextResults"]["results"]["results"]["contents"][1]["videoSecondaryInfoRenderer"]["description"]["runs"]
-
-    res = ''
-    list_link = []
-    for i in range(len(dict_tmp)):
-
-        if 'text' in dict_tmp[i].keys():
-
-            res += dict_tmp[i]['text']
-            
-            if "http" in dict_tmp[i]['text']:
-                list_link.append(dict_tmp[i]['text'])
-    result["description"] = res
-    result["links"] = list_link
     result["id"] = soup.find("meta", itemprop="videoId")['content'] 
 
     return(result)
