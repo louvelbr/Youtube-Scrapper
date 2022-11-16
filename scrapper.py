@@ -6,7 +6,6 @@ import json as json
 from unidecode import unidecode
 import sys, getopt
 
-
 import time
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
@@ -82,14 +81,23 @@ def getDataFromVideo(url):
     response=requests.get(url)
     return BeautifulSoup(response.text,"html.parser")
 
+def getTitle(soup):
+    return soup.find("meta", itemprop="name")['content'] 
+
+def getVideoMaker(soup):
+    return soup.find("span", itemprop="author").next.next['content'] 
+
+def getId(soup):
+    return soup.find("meta", itemprop="videoId")['content'] 
+
 def extract_video_informations(url):  
     
     soup = getDataFromVideo(url)
 
     result = {}  
 
-    result["title"] = soup.find("meta", itemprop="name")['content']  
-    result["videoMaker"] = soup.find("span", itemprop="author").next.next['content'] 
+    result["title"] =  getTitle(soup)
+    result["videoMaker"] = getVideoMaker(soup)
 
     data = re.search(r"var ytInitialData = ({.*?});", soup.prettify()).group(1)  
     data_json = json.loads(data) 
@@ -98,8 +106,7 @@ def extract_video_informations(url):
 
     result["description"], result["links"] = getDescriptionAndLinks(data_json)
 
-    result["id"] = soup.find("meta", itemprop="videoId")['content'] 
-
+    result["id"] = getId(soup)
     result["comments"] = getComments(url)
 
     return(result)
