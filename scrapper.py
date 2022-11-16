@@ -23,7 +23,7 @@ def writeFile(outputFile, dict):
     with open(outputFile, mode='w',encoding='utf8') as f:
         json.dump(dict, f, ensure_ascii=False)
 
-def extract_video_informations(url, inputFile, outputFile):  
+def extract_video_informations(url):  
     
     # importer le code de la page
     response=requests.get(url)
@@ -37,11 +37,7 @@ def extract_video_informations(url, inputFile, outputFile):
     data = re.search(r"var ytInitialData = ({.*?});", soup.prettify()).group(1)  
     data_json = json.loads(data) 
 
-    filename = "tmp.json"
-    # Write the initial json object (list of dicts)
-    with open(filename, mode='w') as f:
-        json.dump(data_json, f)
-
+    writeFile("tmp.json", data_json)
 
     videoPrimaryInfoRenderer = data_json['contents']['twoColumnWatchNextResults']['results']['results']['contents'][0]['videoPrimaryInfoRenderer']  
 
@@ -100,7 +96,7 @@ if __name__ == "__main__":
     # Iterating through the json
     # list
     for id in data['videos_id']:
-        dict_result = extract_video_informations("https://www.youtube.com/watch?v="+id, inputFile, outputFile)
+        dict_result = extract_video_informations("https://www.youtube.com/watch?v="+id)
         dict[id] = dict_result
 
     writeFile(outputFile, dict)
